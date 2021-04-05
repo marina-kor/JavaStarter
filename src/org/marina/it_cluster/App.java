@@ -6,6 +6,8 @@ public class App {
         TextProcessor textProcessor = new TextProcessor();
 
         textProcessor.countWords();
+
+        textProcessor.countSentences();
     }
 
 }

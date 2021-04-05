@@ -26,4 +26,10 @@ public class TextProcessor {
 
 
     }
+
+    public void countSentences() {
+        String[] sentences = text.split("\\.");
+
+        System.out.println("В тексте "+sentences.length+" предложений.");
+    }
 }
