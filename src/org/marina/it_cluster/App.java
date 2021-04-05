@@ -8,6 +8,13 @@ public class App {
         textProcessor.countWords();
 
         textProcessor.countSentences();
+
+        textProcessor.capitalOddSentence();
+
+        textProcessor.replaceVowel();
+
+
+
     }
 
 }
