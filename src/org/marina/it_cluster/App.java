@@ -13,6 +13,7 @@ public class App {
 
         textProcessor.replaceVowel();
 
+        textProcessor.concatenateLast3();
 
 
     }

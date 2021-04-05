@@ -66,4 +66,14 @@ public class TextProcessor {
         }
 
     }
+
+    public void concatenateLast3() {
+        String[] sentences = text.split("\\.");
+        StringBuilder sb=new StringBuilder();
+        sb.append(sentences[sentences.length-3].replaceAll("\\.",","));
+        sb.append(sentences[sentences.length-2].replaceAll("\\.",","));
+        sb.append(sentences[sentences.length-1]);
+        System.out.println(sb.toString());
+
+    }
 }
