@@ -15,6 +15,14 @@ public class App {
 
         textProcessor.concatenateLast3();
 
+        textProcessor.dateFind();
+
+        textProcessor.reverseSentence();
+
+        textProcessor.sumNumbers();
+
+
+
 
     }
 
