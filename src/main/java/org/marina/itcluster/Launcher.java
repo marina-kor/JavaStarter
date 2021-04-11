@@ -3,12 +3,13 @@ package org.marina.itcluster;
 import org.marina.itcluster.model.Book;
 import org.marina.itcluster.service.TerminalViewService;
 import org.marina.itcluster.service.TerminalViewServiceImpl;
+import org.marina.itcluster.service.TextProcessorService;
 import org.marina.itcluster.service.TextProcessorServiceImpl;
 
 public class Launcher {
     public static void main(String[] args) {
         Book book = new Book();
-        TextProcessorServiceImpl textProcessorService = new TextProcessorServiceImpl();
+        TextProcessorService textProcessorService = new TextProcessorServiceImpl();
         TerminalViewService terminalViewService = new TerminalViewServiceImpl();
         
         int[] counters = textProcessorService.countWords(book);

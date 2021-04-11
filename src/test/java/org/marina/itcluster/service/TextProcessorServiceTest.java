@@ -7,14 +7,17 @@ import static org.junit.Assert.assertEquals;
 
 public class TextProcessorServiceTest {
 
+    TextProcessorService textProcessorService = new TextProcessorServiceImpl();
+
     @Test
     public void shouldAnswerWithTrue() {
         Book testBook = new Book();
         testBook.setText("ddd kkk aaaaa qazwsxed rfvtgby");
-        TextProcessorService textProcessorService = new TextProcessorServiceImpl();
+
         int[] counters = textProcessorService.countWords(testBook);
+
         assertEquals(2, counters[0]);
         assertEquals(1, counters[1]);
-        assertEquals(1, counters[1]);
+        assertEquals(1, counters[2]);
     }
 }
