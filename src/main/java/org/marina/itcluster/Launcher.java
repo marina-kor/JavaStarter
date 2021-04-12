@@ -15,12 +15,17 @@ public class Launcher {
         int[] counters = textProcessorService.countWords(book);
         terminalViewService.printCountedWords(counters);
 
-        textProcessorService.countSentences();
-        textProcessorService.capitalOddSentence();
-        textProcessorService.replaceVowel();
-        textProcessorService.concatenateLast3();
-        textProcessorService.dateFind();
-        textProcessorService.reverseSentence();
-        textProcessorService.sumNumbers();
+        int count = textProcessorService.countSentences(book);
+        terminalViewService.printCountedSentences(count);
+
+
+
+
+        textProcessorService.capitalOddSentence(book);
+        textProcessorService.replaceVowel(book);
+        textProcessorService.concatenateLast3(book);
+        textProcessorService.dateFind(book);
+        textProcessorService.reverseSentence(book);
+        textProcessorService.sumNumbers(book);
     }
 }

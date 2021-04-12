@@ -9,4 +9,10 @@ public class TerminalViewServiceImpl implements TerminalViewService {
                         + counters[1] + " в пять символов и "
                         + counters[2] + " в семь.");
     }
+
+    public void printCountedSentences(int count){
+        System.out.println("В тексте "
+                                    + count  +
+                                            " предложений.");
+    }
 }
