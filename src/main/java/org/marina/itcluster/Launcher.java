@@ -19,13 +19,21 @@ public class Launcher {
         terminalViewService.printCountedSentences(count);
 
 
+        String[] sentences = textProcessorService.capitalOddSentence(book);
+        terminalViewService.capitalOddSentence(sentences);
 
-
-        textProcessorService.capitalOddSentence(book);
         textProcessorService.replaceVowel(book);
+
+
         textProcessorService.concatenateLast3(book);
+
+
         textProcessorService.dateFind(book);
+
+
         textProcessorService.reverseSentence(book);
+
+
         textProcessorService.sumNumbers(book);
     }
 }

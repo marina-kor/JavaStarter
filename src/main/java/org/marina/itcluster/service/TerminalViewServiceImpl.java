@@ -15,4 +15,9 @@ public class TerminalViewServiceImpl implements TerminalViewService {
                                     + count  +
                                             " предложений.");
     }
+    public void capitalOddSentence (String[] sentences) {
+
+
+        System.out.println("Каждое второе предложение в верхнем регистре: "+sentences);
+    }
 }

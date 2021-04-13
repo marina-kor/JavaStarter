@@ -35,19 +35,18 @@ public class TextProcessorServiceImpl implements TextProcessorService {
         return sentences.length;
     }
 
-    public void capitalOddSentence(Book book) {
-        System.out.println("Каждое второе предложение в верхнем регистре:");
+    public String[] capitalOddSentence(Book book) {
+        //System.out.println("Каждое второе предложение в верхнем регистре:");
         String[] sentences = book.getText().split("\\.");
 
         for (int i = 0; i < sentences.length; i++) {
             if ((i + 1) % 2 == 0) {
-                System.out.println(sentences[i].toUpperCase());
-
+                sentences[i] = sentences[i].toUpperCase();
             }
         }
-
-
+        return sentences;
     }
+
 
     public void replaceVowel(Book book) {
         System.out.println("В каждом третьем предложении гласные заменены на согласные:");

@@ -33,4 +33,13 @@ public class TextProcessorServiceTest {
 
     }
 
+    @Test
+    public void shouldAnswearWithTrueCapitalOdd(){
+        testBook.setText("vhfgkerhf. bf.");
+
+        String[] sentences = textProcessorService.capitalOddSentence(testBook);
+
+        assertEquals(" BF", sentences[1]);
+    }
+
 }
