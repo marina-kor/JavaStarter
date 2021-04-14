@@ -6,9 +6,9 @@ public interface TextProcessorService {
     int[] countWords(Book book);
     int countSentences(Book book);
     String[] capitalOddSentence(Book book);
-    void replaceVowel(Book book);
-    void concatenateLast3(Book book);
-    void dateFind(Book book);
-    void reverseSentence(Book book);
-    void sumNumbers(Book book);
+    String[] replaceVowel(Book book);
+    String concatenateLast3(Book book);
+    int dateFind(Book book);
+    String reverseSentence(Book book);
+    int sumNumbers(Book book);
 }

@@ -20,20 +20,25 @@ public class Launcher {
 
 
         String[] sentences = textProcessorService.capitalOddSentence(book);
-        terminalViewService.capitalOddSentence(sentences);
+        terminalViewService.printCapitalOddSentence(sentences);
 
-        textProcessorService.replaceVowel(book);
-
-
-        textProcessorService.concatenateLast3(book);
+        String[] vowelSentences = textProcessorService.replaceVowel(book);
+        terminalViewService.printReplaceVowel(sentences);
 
 
-        textProcessorService.dateFind(book);
+        String concatenateSentences = textProcessorService.concatenateLast3(book);
+        terminalViewService.printConcatenateLast3(concatenateSentences);
 
 
-        textProcessorService.reverseSentence(book);
+        int dateCount = textProcessorService.dateFind(book);
+        terminalViewService.printDateFind(dateCount);
 
 
-        textProcessorService.sumNumbers(book);
+        String words = textProcessorService.reverseSentence(book);
+        terminalViewService.printReverseSentence(words);
+
+
+        int sum = textProcessorService.sumNumbers(book);
+        terminalViewService.printSumNumbers(sum);
     }
 }
